@@ -1,0 +1,1470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.rtl.min.css" integrity="sha384-OXTEbYDqaX2ZY/BOaZV/yFGChYHtrXH2nyXJ372n2Y8abBhrqacCEe+3qhSHtLjy" crossorigin="anonymous">
+    <link rel="stylesheet" href="dropdowns.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-md  fixed-top position-sticky mb-2" style="background-color: #a2a0a0;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Fixed navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <div class="container mt-5">
+        <div class="nav-scroller py-1 mb-2 mt-5">
+        <nav class="nav ndododo d-flex justify-content-between gx-2">
+            <a class="m-1 mt-1 mb-2 p-1 link-secondary btn btn-outline-dark rounded-4" href="#">World</a>
+            <a class="m-1 mt-1 mb-2 p-1 link-secondary btn btn-outline-dark rounded-4" href="#">U.S.</a>
+            <a class="m-1 mt-1 mb-2 p-1 link-secondary btn btn-outline-dark rounded-4" href="#">Technology</a>
+            <a class="m-1 mt-1 mb-2 p-1 link-secondary btn btn-outline-dark rounded-4" href="#">Design</a>
+            <a class="m-1 mt-1 mb-2 p-1 link-secondary btn btn-outline-dark rounded-4" href="#">Culture</a>
+            <a class="m-1 mt-1 mb-2 p-1 link-secondary btn btn-outline-dark rounded-4" href="#">Business</a>
+            <a class="m-1 mt-1 mb-2 p-1 link-secondary btn btn-outline-dark rounded-4" href="#">Politics</a>
+            <a class="m-1 mt-1 mb-2 p-1 link-secondary btn btn-outline-dark rounded-4" href="#">Opinion</a>
+            <a class="m-1 mt-1 mb-2 p-1 link-secondary btn btn-outline-dark rounded-4" href="#">Science</a>
+            <a class="m-1 mt-1 mb-2 p-1 link-secondary btn btn-outline-dark rounded-4" href="#">Health</a>
+            <a class="m-1 mt-1 mb-2 p-1 link-secondary btn btn-outline-dark rounded-4" href="#">Style</a>
+            <a class="m-1 mt-1 mb-2 p-1 link-secondary btn btn-outline-dark rounded-4" href="#">Travel</a>
+        </nav>
+        </div>
+    </div>
+    <style>
+        .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .ndododo {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+    </style>
+    <!--  -->
+    <!-- compo1 -->
+    <div>
+        <div class="container my-5">
+            <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+              <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+                <h1 class="display-4 fw-bold lh-1">Border hero with cropped image and shadows</h1>
+                <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+                  <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold">Primary</button>
+                  <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
+                </div>
+              </div>
+              <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+                  <img class="rounded-lg-3" src="bootstrap-docs.png" alt="" width="720">
+              </div>
+            </div>
+          </div>
+      </div>
+    <!-- compo1 -->
+    <!-- compo2 -->
+    <div class="container px-4 py-5" id="custom-cards">
+        <h2 class="pb-2 border-bottom">Custom cards</h2>
+    
+        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+          <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-1.jpg');">
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Short title, long jacket</h3>
+                <ul class="d-flex list-unstyled mt-auto">
+                  <li class="me-auto">
+                    <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-4 border border-white">
+                  </li>
+                  <li class="d-flex align-items-center me-3">
+                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                    <small>Earth</small>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                    <small>3d</small>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-2.jpg');">
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Much longer title that wraps to multiple lines</h3>
+                <ul class="d-flex list-unstyled mt-auto">
+                  <li class="me-auto">
+                    <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-4 border border-white">
+                  </li>
+                  <li class="d-flex align-items-center me-3">
+                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                    <small>india</small>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                    <small>4d</small>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-3.jpg');">
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Another longer title belongs here</h3>
+                <ul class="d-flex list-unstyled mt-auto">
+                  <li class="me-auto">
+                    <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-4 border border-white">
+                  </li>
+                  <li class="d-flex align-items-center me-3">
+                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                    <small>California</small>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                    <small>5d</small>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- compo2 -->
+    <!--  -->
+    <!-- compo3 -->
+    <div class="container-md">
+
+        <div class="row align-items-md-stretch gy-4">
+            <div class="col-md-6 ">
+              <div class="h-100 p-5 text-bg-dark rounded-3">
+                <h2>Change the background</h2>
+                <p>Swap the background-color utility and add a `.text-*` color utility to mix up the jumbotron look. Then, mix and match with additional component themes and more.</p>
+                <button class="btn btn-outline-light" type="button">Example button</button>
+              </div>
+            </div>
+            <div class="col-md-6 ">
+              <div class="h-100 p-5 bg-light border rounded-3">
+                <h2>Add borders</h2>
+                <p>Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's content for equal-height.</p>
+                <button class="btn btn-outline-secondary" type="button">Example button</button>
+              </div>
+            </div>
+        </div>
+    </div>
+    <!-- compo3 -->
+    <!--  -->
+    <!-- compo4 -->
+    <div class="container marketing mt-3">
+      
+        <!-- Three columns of text below the carousel -->
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+    
+            <h2 class="fw-normal">Heading</h2>
+            <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
+            <p><a class="btn btn-secondary" href="#">View details »</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4 col-md-6">
+            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+    
+            <h2 class="fw-normal">Heading</h2>
+            <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
+            <p><a class="btn btn-secondary" href="#">View details »</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4 col-md-6">
+            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+    
+            <h2 class="fw-normal">Heading</h2>
+            <p>And lastly this, the third column of representative placeholder content.</p>
+            <p><a class="btn btn-secondary" href="#">View details »</a></p>
+          </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+    
+    
+        <!-- START THE FEATURETTES -->
+    
+        <hr class="featurette-divider">
+    
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading fw-normal lh-1">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h2>
+            <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
+          </div>
+          <div class="col-md-5">
+            <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+    
+          </div>
+        </div>
+    
+        <hr class="featurette-divider">
+    
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
+            <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+    
+          </div>
+        </div>
+    
+        <hr class="featurette-divider">
+    
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading fw-normal lh-1">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+            <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
+          </div>
+          <div class="col-md-5">
+            <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+    
+          </div>
+        </div>
+    
+        <hr class="featurette-divider">
+    
+        <!-- /END THE FEATURETTES -->
+    
+      </div>
+    <!-- compo4 -->
+    <!--  -->
+
+    <!-- compo5 -->
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-md-8">
+              <h3 class="pb-4 mb-4 fst-italic border-bottom">
+                From the Firehose
+              </h3>
+        
+              <article class="blog-post">
+                <h2 class="blog-post-title mb-1">Sample blog post</h2>
+                <p class="blog-post-meta">January 1, 2021 by <a href="#">Mark</a></p>
+        
+                <p>This blog post shows a few different types of content that’s supported and styled with Bootstrap. Basic typography, lists, tables, images, code, and more are all supported as expected.</p>
+                <hr>
+                <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+                <h2>Blockquotes</h2>
+                <p>This is an example blockquote in action:</p>
+                <blockquote class="blockquote">
+                  <p>Quoted text goes here.</p>
+                </blockquote>
+                <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+                <h3>Example lists</h3>
+                <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout. This is an example unordered list:</p>
+                <ul>
+                  <li>First list item</li>
+                  <li>Second list item with a longer description</li>
+                  <li>Third list item to close it out</li>
+                </ul>
+                <p>And this is an ordered list:</p>
+                <ol>
+                  <li>First list item</li>
+                  <li>Second list item with a longer description</li>
+                  <li>Third list item to close it out</li>
+                </ol>
+                <p>And this is a definition list:</p>
+                <dl>
+                  <dt>HyperText Markup Language (HTML)</dt>
+                  <dd>The language used to describe and define the content of a Web page</dd>
+                  <dt>Cascading Style Sheets (CSS)</dt>
+                  <dd>Used to describe the appearance of Web content</dd>
+                  <dt>JavaScript (JS)</dt>
+                  <dd>The programming language used to build advanced Web sites and applications</dd>
+                </dl>
+                <h2>Inline HTML elements</h2>
+                <p>HTML defines a long list of available inline tags, a complete list of which can be found on the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">Mozilla Developer Network</a>.</p>
+                <ul>
+                  <li><strong>To bold text</strong>, use <code class="language-plaintext highlighter-rouge">&lt;strong&gt;</code>.</li>
+                  <li><em>To italicize text</em>, use <code class="language-plaintext highlighter-rouge">&lt;em&gt;</code>.</li>
+                  <li>Abbreviations, like <abbr title="HyperText Markup Language">HTML</abbr> should use <code class="language-plaintext highlighter-rouge">&lt;abbr&gt;</code>, with an optional <code class="language-plaintext highlighter-rouge">title</code> attribute for the full phrase.</li>
+                  <li>Citations, like <cite>— Mark Otto</cite>, should use <code class="language-plaintext highlighter-rouge">&lt;cite&gt;</code>.</li>
+                  <li><del>Deleted</del> text should use <code class="language-plaintext highlighter-rouge">&lt;del&gt;</code> and <ins>inserted</ins> text should use <code class="language-plaintext highlighter-rouge">&lt;ins&gt;</code>.</li>
+                  <li>Superscript <sup>text</sup> uses <code class="language-plaintext highlighter-rouge">&lt;sup&gt;</code> and subscript <sub>text</sub> uses <code class="language-plaintext highlighter-rouge">&lt;sub&gt;</code>.</li>
+                </ul>
+                <p>Most of these elements are styled by browsers with few modifications on our part.</p>
+                <h2>Heading</h2>
+                <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+                <h3>Sub-heading</h3>
+                <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+                <pre><code>Example code block</code></pre>
+                <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout.</p>
+              </article>
+        
+              <article class="blog-post">
+                <h2 class="blog-post-title mb-1">Another blog post</h2>
+                <p class="blog-post-meta">December 23, 2020 by <a href="#">Jacob</a></p>
+        
+                <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+                <blockquote>
+                  <p>Longer quote goes here, maybe with some <strong>emphasized text</strong> in the middle of it.</p>
+                </blockquote>
+                <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+                <h3>Example table</h3>
+                <p>And don't forget about tables in these posts:</p>
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Upvotes</th>
+                      <th>Downvotes</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Alice</td>
+                      <td>10</td>
+                      <td>11</td>
+                    </tr>
+                    <tr>
+                      <td>Bob</td>
+                      <td>4</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <td>Charlie</td>
+                      <td>7</td>
+                      <td>9</td>
+                    </tr>
+                  </tbody>
+                  <tfoot>
+                    <tr>
+                      <td>Totals</td>
+                      <td>21</td>
+                      <td>23</td>
+                    </tr>
+                  </tfoot>
+                </table>
+        
+                <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout.</p>
+              </article>
+        
+              <article class="blog-post">
+                <h2 class="blog-post-title mb-1">New feature</h2>
+                <p class="blog-post-meta">December 14, 2020 by <a href="#">Chris</a></p>
+        
+                <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+                <ul>
+                  <li>First list item</li>
+                  <li>Second list item with a longer description</li>
+                  <li>Third list item to close it out</li>
+                </ul>
+                <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout.</p>
+              </article>
+        
+              <nav class="blog-pagination" aria-label="Pagination">
+                <a class="btn btn-outline-primary rounded-pill" href="#">Older</a>
+                <a class="btn btn-outline-secondary rounded-pill disabled">Newer</a>
+              </nav>
+        
+            </div>
+        
+            <div class="col-md-4">
+              <div class="position-sticky" style="top: 2rem;">
+                <div class="p-4 mb-3 bg-light rounded">
+                  <h4 class="fst-italic">About</h4>
+                  <p class="mb-0">Customize this section to tell your visitors a little bit about your publication, writers, content, or something else entirely. Totally up to you.</p>
+                </div>
+        
+                <div class="p-4">
+                  <h4 class="fst-italic">Archives</h4>
+                  <ol class="list-unstyled mb-0">
+                    <li><a href="#">March 2021</a></li>
+                    <li><a href="#">February 2021</a></li>
+                    <li><a href="#">January 2021</a></li>
+                    <li><a href="#">December 2020</a></li>
+                    <li><a href="#">November 2020</a></li>
+                    <li><a href="#">October 2020</a></li>
+                    <li><a href="#">September 2020</a></li>
+                    <li><a href="#">August 2020</a></li>
+                    <li><a href="#">July 2020</a></li>
+                    <li><a href="#">June 2020</a></li>
+                    <li><a href="#">May 2020</a></li>
+                    <li><a href="#">April 2020</a></li>
+                  </ol>
+                </div>
+        
+                <div class="p-4">
+                  <h4 class="fst-italic">Elsewhere</h4>
+                  <ol class="list-unstyled">
+                    <li><a href="#">GitHub</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Facebook</a></li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+    <!-- compo5 -->
+    <!--  -->
+    <!--  -->
+    <!--  compo6-->
+    <div class="bg-dark text-secondary px-4 py-5 text-center">
+        <div class="py-5">
+          <h1 class="display-5 fw-bold text-white">Dark mode hero</h1>
+          <div class="col-lg-6 mx-auto">
+            <p class="fs-5 mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+              <button type="button" class="btn btn-lg btn-outline-info fw-bold me-sm-3 px-4">Custom button</button>
+              <button type="button" class="btn btn-outline-light btn-lg px-4">Secondary</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!--  compo6-->
+    <!--  -->
+    <!--  compo7-->
+    <div class="container">
+
+        <div class="p-4 p-md-5 mb-4 rounded text-bg-dark mt-5">
+            <div class="col-md-6 px-0">
+              <h1 class="display-4 fst-italic">Title of a longer featured blog post</h1>
+              <p class="lead my-3">Multiple lines of text that form the lede, informing new readers quickly and efficiently about what’s most interesting in this post’s contents.</p>
+              <p class="lead mb-0"><a href="#" class="text-white fw-bold">Continue reading...</a></p>
+            </div>
+          </div>
+    </div>
+    <!--  compo7-->
+    <!--  -->
+    <!-- compo8 -->
+    <div class="container">
+        <div class="row">
+            <div class="">
+                <div class="position-sticky" style="top: 3rem;background-color: blue; color:#a2a0a0;">
+                    <h1>sdfsdfsdfsdf difidf idfidf fdidif</h1>
+                </div>
+
+                <article class="blog-post">
+                    <h2 class="blog-post-title mb-1">Sample blog post</h2>
+                    <p class="blog-post-meta">January 1, 2021 by <a href="#">Mark</a></p>
+            
+                    <p>This blog post shows a few different types of content that’s supported and styled with Bootstrap. Basic typography, lists, tables, images, code, and more are all supported as expected.</p>
+                    <hr>
+                    <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+                    <h2>Blockquotes</h2>
+                    <p>This is an example blockquote in action:</p>
+                    <blockquote class="blockquote">
+                      <p>Quoted text goes here.</p>
+                    </blockquote>
+                    <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+                    <h3>Example lists</h3>
+                    <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout. This is an example unordered list:</p>
+                    <ul>
+                      <li>First list item</li>
+                      <li>Second list item with a longer description</li>
+                      <li>Third list item to close it out</li>
+                    </ul>
+                    <p>And this is an ordered list:</p>
+                    <ol>
+                      <li>First list item</li>
+                      <li>Second list item with a longer description</li>
+                      <li>Third list item to close it out</li>
+                    </ol>
+                    <p>And this is a definition list:</p>
+                    <dl>
+                      <dt>HyperText Markup Language (HTML)</dt>
+                      <dd>The language used to describe and define the content of a Web page</dd>
+                      <dt>Cascading Style Sheets (CSS)</dt>
+                      <dd>Used to describe the appearance of Web content</dd>
+                      <dt>JavaScript (JS)</dt>
+                      <dd>The programming language used to build advanced Web sites and applications</dd>
+                    </dl>
+                    <h2>Inline HTML elements</h2>
+                    <p>HTML defines a long list of available inline tags, a complete list of which can be found on the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">Mozilla Developer Network</a>.</p>
+                    <ul>
+                      <li><strong>To bold text</strong>, use <code class="language-plaintext highlighter-rouge">&lt;strong&gt;</code>.</li>
+                      <li><em>To italicize text</em>, use <code class="language-plaintext highlighter-rouge">&lt;em&gt;</code>.</li>
+                      <li>Abbreviations, like <abbr title="HyperText Markup Language">HTML</abbr> should use <code class="language-plaintext highlighter-rouge">&lt;abbr&gt;</code>, with an optional <code class="language-plaintext highlighter-rouge">title</code> attribute for the full phrase.</li>
+                      <li>Citations, like <cite>— Mark Otto</cite>, should use <code class="language-plaintext highlighter-rouge">&lt;cite&gt;</code>.</li>
+                      <li><del>Deleted</del> text should use <code class="language-plaintext highlighter-rouge">&lt;del&gt;</code> and <ins>inserted</ins> text should use <code class="language-plaintext highlighter-rouge">&lt;ins&gt;</code>.</li>
+                      <li>Superscript <sup>text</sup> uses <code class="language-plaintext highlighter-rouge">&lt;sup&gt;</code> and subscript <sub>text</sub> uses <code class="language-plaintext highlighter-rouge">&lt;sub&gt;</code>.</li>
+                    </ul>
+                    <p>Most of these elements are styled by browsers with few modifications on our part.</p>
+                    <h2>Heading</h2>
+                    <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+                    <h3>Sub-heading</h3>
+                    <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+                    <pre><code>Example code block</code></pre>
+                    <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout.</p>
+                  </article>
+                <div class="">
+                    <div class="position-sticky" style="top: 6rem;background-color: rgb(255, 0, 234); color:#a2a0a0;">
+                        <h1>sdfsdfsdfsdf difidf idfidf fdidif</h1>
+                    </div>
+
+                    <article class="blog-post">
+                        <h2 class="blog-post-title mb-1">Sample blog post</h2>
+                        <p class="blog-post-meta">January 1, 2021 by <a href="#">Mark</a></p>
+                
+                        <p>This blog post shows a few different types of content that’s supported and styled with Bootstrap. Basic typography, lists, tables, images, code, and more are all supported as expected.</p>
+                        <hr>
+                        <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+                        <h2>Blockquotes</h2>
+                        <p>This is an example blockquote in action:</p>
+                        <blockquote class="blockquote">
+                            <p>Quoted text goes here.</p>
+                        </blockquote>
+                        <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+                        <h3>Example lists</h3>
+                        <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout. This is an example unordered list:</p>
+                        <ul>
+                            <li>First list item</li>
+                            <li>Second list item with a longer description</li>
+                            <li>Third list item to close it out</li>
+                        </ul>
+                        <p>And this is an ordered list:</p>
+                        <ol>
+                            <li>First list item</li>
+                            <li>Second list item with a longer description</li>
+                            <li>Third list item to close it out</li>
+                        </ol>
+                        <p>And this is a definition list:</p>
+                        <dl>
+                            <dt>HyperText Markup Language (HTML)</dt>
+                            <dd>The language used to describe and define the content of a Web page</dd>
+                            <dt>Cascading Style Sheets (CSS)</dt>
+                            <dd>Used to describe the appearance of Web content</dd>
+                            <dt>JavaScript (JS)</dt>
+                            <dd>The programming language used to build advanced Web sites and applications</dd>
+                        </dl>
+                        <h2>Inline HTML elements</h2>
+                        <p>HTML defines a long list of available inline tags, a complete list of which can be found on the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">Mozilla Developer Network</a>.</p>
+                        <ul>
+                            <li><strong>To bold text</strong>, use <code class="language-plaintext highlighter-rouge">&lt;strong&gt;</code>.</li>
+                            <li><em>To italicize text</em>, use <code class="language-plaintext highlighter-rouge">&lt;em&gt;</code>.</li>
+                            <li>Abbreviations, like <abbr title="HyperText Markup Language">HTML</abbr> should use <code class="language-plaintext highlighter-rouge">&lt;abbr&gt;</code>, with an optional <code class="language-plaintext highlighter-rouge">title</code> attribute for the full phrase.</li>
+                            <li>Citations, like <cite>— Mark Otto</cite>, should use <code class="language-plaintext highlighter-rouge">&lt;cite&gt;</code>.</li>
+                            <li><del>Deleted</del> text should use <code class="language-plaintext highlighter-rouge">&lt;del&gt;</code> and <ins>inserted</ins> text should use <code class="language-plaintext highlighter-rouge">&lt;ins&gt;</code>.</li>
+                            <li>Superscript <sup>text</sup> uses <code class="language-plaintext highlighter-rouge">&lt;sup&gt;</code> and subscript <sub>text</sub> uses <code class="language-plaintext highlighter-rouge">&lt;sub&gt;</code>.</li>
+                        </ul>
+                        <p>Most of these elements are styled by browsers with few modifications on our part.</p>
+                        <h2>Heading</h2>
+                        <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+                        <h3>Sub-heading</h3>
+                        <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+                        <pre><code>Example code block</code></pre>
+                        <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout.</p>
+                    </article>
+                    <div class="">
+                        <div class="position-sticky" style="top: 9rem;background-color: rgb(0, 255, 34); color:#a2a0a0;">
+                            <h1>sdfsdfsdfsdf difidf idfidf fdidif</h1>
+                        </div>
+    
+                        <article class="blog-post">
+                            <h2 class="blog-post-title mb-1">Sample blog post</h2>
+                            <p class="blog-post-meta">January 1, 2021 by <a href="#">Mark</a></p>
+                    
+                            <p>This blog post shows a few different types of content that’s supported and styled with Bootstrap. Basic typography, lists, tables, images, code, and more are all supported as expected.</p>
+                            <hr>
+                            <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+                            <h2>Blockquotes</h2>
+                            <p>This is an example blockquote in action:</p>
+                            <blockquote class="blockquote">
+                                <p>Quoted text goes here.</p>
+                            </blockquote>
+                            <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+                            <h3>Example lists</h3>
+                            <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout. This is an example unordered list:</p>
+                            <ul>
+                                <li>First list item</li>
+                                <li>Second list item with a longer description</li>
+                                <li>Third list item to close it out</li>
+                            </ul>
+                            <p>And this is an ordered list:</p>
+                            <ol>
+                                <li>First list item</li>
+                                <li>Second list item with a longer description</li>
+                                <li>Third list item to close it out</li>
+                            </ol>
+                            <p>And this is a definition list:</p>
+                            <dl>
+                                <dt>HyperText Markup Language (HTML)</dt>
+                                <dd>The language used to describe and define the content of a Web page</dd>
+                                <dt>Cascading Style Sheets (CSS)</dt>
+                                <dd>Used to describe the appearance of Web content</dd>
+                                <dt>JavaScript (JS)</dt>
+                                <dd>The programming language used to build advanced Web sites and applications</dd>
+                            </dl>
+                            <h2>Inline HTML elements</h2>
+                            <p>HTML defines a long list of available inline tags, a complete list of which can be found on the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">Mozilla Developer Network</a>.</p>
+                            <ul>
+                                <li><strong>To bold text</strong>, use <code class="language-plaintext highlighter-rouge">&lt;strong&gt;</code>.</li>
+                                <li><em>To italicize text</em>, use <code class="language-plaintext highlighter-rouge">&lt;em&gt;</code>.</li>
+                                <li>Abbreviations, like <abbr title="HyperText Markup Language">HTML</abbr> should use <code class="language-plaintext highlighter-rouge">&lt;abbr&gt;</code>, with an optional <code class="language-plaintext highlighter-rouge">title</code> attribute for the full phrase.</li>
+                                <li>Citations, like <cite>— Mark Otto</cite>, should use <code class="language-plaintext highlighter-rouge">&lt;cite&gt;</code>.</li>
+                                <li><del>Deleted</del> text should use <code class="language-plaintext highlighter-rouge">&lt;del&gt;</code> and <ins>inserted</ins> text should use <code class="language-plaintext highlighter-rouge">&lt;ins&gt;</code>.</li>
+                                <li>Superscript <sup>text</sup> uses <code class="language-plaintext highlighter-rouge">&lt;sup&gt;</code> and subscript <sub>text</sub> uses <code class="language-plaintext highlighter-rouge">&lt;sub&gt;</code>.</li>
+                            </ul>
+                            <p>Most of these elements are styled by browsers with few modifications on our part.</p>
+                            <h2>Heading</h2>
+                            <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+                            <h3>Sub-heading</h3>
+                            <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+                            <pre><code>Example code block</code></pre>
+                            <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout.</p>
+                        </article>
+                        <div class="">
+                            <div class="position-sticky" style="top: 12rem;background-color: rgba(255, 0, 43, 0.815); color:#a2a0a0;">
+                                <h1>sdfsdfsdfsdf difidf idfidf fdidif</h1>
+                            </div>
+        
+                            <article class="blog-post">
+                                <h2 class="blog-post-title mb-1">Sample blog post</h2>
+                                <p class="blog-post-meta">January 1, 2021 by <a href="#">Mark</a></p>
+                        
+                                <p>This blog post shows a few different types of content that’s supported and styled with Bootstrap. Basic typography, lists, tables, images, code, and more are all supported as expected.</p>
+                                <hr>
+                                <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+                                <h2>Blockquotes</h2>
+                                <p>This is an example blockquote in action:</p>
+                                <blockquote class="blockquote">
+                                    <p>Quoted text goes here.</p>
+                                </blockquote>
+                                <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+                                <h3>Example lists</h3>
+                                <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout. This is an example unordered list:</p>
+                                <ul>
+                                    <li>First list item</li>
+                                    <li>Second list item with a longer description</li>
+                                    <li>Third list item to close it out</li>
+                                </ul>
+                                <p>And this is an ordered list:</p>
+                                <ol>
+                                    <li>First list item</li>
+                                    <li>Second list item with a longer description</li>
+                                    <li>Third list item to close it out</li>
+                                </ol>
+                                <p>And this is a definition list:</p>
+                                <dl>
+                                    <dt>HyperText Markup Language (HTML)</dt>
+                                    <dd>The language used to describe and define the content of a Web page</dd>
+                                    <dt>Cascading Style Sheets (CSS)</dt>
+                                    <dd>Used to describe the appearance of Web content</dd>
+                                    <dt>JavaScript (JS)</dt>
+                                    <dd>The programming language used to build advanced Web sites and applications</dd>
+                                </dl>
+                                <h2>Inline HTML elements</h2>
+                                <p>HTML defines a long list of available inline tags, a complete list of which can be found on the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">Mozilla Developer Network</a>.</p>
+                                <ul>
+                                    <li><strong>To bold text</strong>, use <code class="language-plaintext highlighter-rouge">&lt;strong&gt;</code>.</li>
+                                    <li><em>To italicize text</em>, use <code class="language-plaintext highlighter-rouge">&lt;em&gt;</code>.</li>
+                                    <li>Abbreviations, like <abbr title="HyperText Markup Language">HTML</abbr> should use <code class="language-plaintext highlighter-rouge">&lt;abbr&gt;</code>, with an optional <code class="language-plaintext highlighter-rouge">title</code> attribute for the full phrase.</li>
+                                    <li>Citations, like <cite>— Mark Otto</cite>, should use <code class="language-plaintext highlighter-rouge">&lt;cite&gt;</code>.</li>
+                                    <li><del>Deleted</del> text should use <code class="language-plaintext highlighter-rouge">&lt;del&gt;</code> and <ins>inserted</ins> text should use <code class="language-plaintext highlighter-rouge">&lt;ins&gt;</code>.</li>
+                                    <li>Superscript <sup>text</sup> uses <code class="language-plaintext highlighter-rouge">&lt;sup&gt;</code> and subscript <sub>text</sub> uses <code class="language-plaintext highlighter-rouge">&lt;sub&gt;</code>.</li>
+                                </ul>
+                                <p>Most of these elements are styled by browsers with few modifications on our part.</p>
+                                <h2>Heading</h2>
+                                <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+                                <h3>Sub-heading</h3>
+                                <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+                                <pre><code>Example code block</code></pre>
+                                <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout.</p>
+                            </article>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+        .position-sticky {
+            position: -webkit-sticky!important;
+            position: sticky!important;
+        }
+    </style>
+    <!-- compo8 -->
+    <!--  -->
+    <!--  compo9-->
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h3 class="pb-4 mb-4 fst-italic border-bottom">
+                  From the Firehose
+                </h3>
+          
+                <article class="blog-post">
+                  <h2 class="blog-post-title mb-1">Sample blog post</h2>
+                  <p class="blog-post-meta">January 1, 2021 by <a href="#">Mark</a></p>
+          
+                  <p>This blog post shows a few different types of content that’s supported and styled with Bootstrap. Basic typography, lists, tables, images, code, and more are all supported as expected.</p>
+                  <hr>
+                  <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+                  <h2>Blockquotes</h2>
+                  <p>This is an example blockquote in action:</p>
+                  <blockquote class="blockquote">
+                    <p>Quoted text goes here.</p>
+                  </blockquote>
+                  <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+                  <h3>Example lists</h3>
+                  <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout. This is an example unordered list:</p>
+                  <ul>
+                    <li>First list item</li>
+                    <li>Second list item with a longer description</li>
+                    <li>Third list item to close it out</li>
+                  </ul>
+                  <p>And this is an ordered list:</p>
+                  <ol>
+                    <li>First list item</li>
+                    <li>Second list item with a longer description</li>
+                    <li>Third list item to close it out</li>
+                  </ol>
+                  <p>And this is a definition list:</p>
+                  <dl>
+                    <dt>HyperText Markup Language (HTML)</dt>
+                    <dd>The language used to describe and define the content of a Web page</dd>
+                    <dt>Cascading Style Sheets (CSS)</dt>
+                    <dd>Used to describe the appearance of Web content</dd>
+                    <dt>JavaScript (JS)</dt>
+                    <dd>The programming language used to build advanced Web sites and applications</dd>
+                  </dl>
+                  <h2>Inline HTML elements</h2>
+                  <p>HTML defines a long list of available inline tags, a complete list of which can be found on the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">Mozilla Developer Network</a>.</p>
+                  <ul>
+                    <li><strong>To bold text</strong>, use <code class="language-plaintext highlighter-rouge">&lt;strong&gt;</code>.</li>
+                    <li><em>To italicize text</em>, use <code class="language-plaintext highlighter-rouge">&lt;em&gt;</code>.</li>
+                    <li>Abbreviations, like <abbr title="HyperText Markup Language">HTML</abbr> should use <code class="language-plaintext highlighter-rouge">&lt;abbr&gt;</code>, with an optional <code class="language-plaintext highlighter-rouge">title</code> attribute for the full phrase.</li>
+                    <li>Citations, like <cite>— Mark Otto</cite>, should use <code class="language-plaintext highlighter-rouge">&lt;cite&gt;</code>.</li>
+                    <li><del>Deleted</del> text should use <code class="language-plaintext highlighter-rouge">&lt;del&gt;</code> and <ins>inserted</ins> text should use <code class="language-plaintext highlighter-rouge">&lt;ins&gt;</code>.</li>
+                    <li>Superscript <sup>text</sup> uses <code class="language-plaintext highlighter-rouge">&lt;sup&gt;</code> and subscript <sub>text</sub> uses <code class="language-plaintext highlighter-rouge">&lt;sub&gt;</code>.</li>
+                  </ul>
+                  <p>Most of these elements are styled by browsers with few modifications on our part.</p>
+                  <h2>Heading</h2>
+                  <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+                  <h3>Sub-heading</h3>
+                  <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+                  <pre><code>Example code block</code></pre>
+                  <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout.</p>
+                </article>
+          
+                <article class="blog-post">
+                  <h2 class="blog-post-title mb-1">Another blog post</h2>
+                  <p class="blog-post-meta">December 23, 2020 by <a href="#">Jacob</a></p>
+          
+                  <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+                  <blockquote>
+                    <p>Longer quote goes here, maybe with some <strong>emphasized text</strong> in the middle of it.</p>
+                  </blockquote>
+                  <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+                  <h3>Example table</h3>
+                  <p>And don't forget about tables in these posts:</p>
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>Name</th>
+                        <th>Upvotes</th>
+                        <th>Downvotes</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Alice</td>
+                        <td>10</td>
+                        <td>11</td>
+                      </tr>
+                      <tr>
+                        <td>Bob</td>
+                        <td>4</td>
+                        <td>3</td>
+                      </tr>
+                      <tr>
+                        <td>Charlie</td>
+                        <td>7</td>
+                        <td>9</td>
+                      </tr>
+                    </tbody>
+                    <tfoot>
+                      <tr>
+                        <td>Totals</td>
+                        <td>21</td>
+                        <td>23</td>
+                      </tr>
+                    </tfoot>
+                  </table>
+          
+                  <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout.</p>
+                </article>
+          
+                <article class="blog-post">
+                  <h2 class="blog-post-title mb-1">New feature</h2>
+                  <p class="blog-post-meta">December 14, 2020 by <a href="#">Chris</a></p>
+          
+                  <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+                  <ul>
+                    <li>First list item</li>
+                    <li>Second list item with a longer description</li>
+                    <li>Third list item to close it out</li>
+                  </ul>
+                  <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout.</p>
+                </article>
+          
+                <nav class="blog-pagination" aria-label="Pagination">
+                  <a class="btn btn-outline-primary rounded-pill" href="#">Older</a>
+                  <a class="btn btn-outline-secondary rounded-pill disabled">Newer</a>
+                </nav>
+          
+              </div>
+        </div>
+    </div>
+    <!--  compo9-->
+    <!--  -->
+    <!--  compo10-->
+    <main>
+      <div class="container">
+    
+        <h1>Bootstrap grid examples</h1>
+        <p class="lead">Basic grid layouts to get you familiar with building within the Bootstrap grid system.</p>
+        <p>In these examples the <code>.themed-grid-col</code> class is added to the columns to add some theming. This is not a class that is available in Bootstrap by default.</p>
+    
+        <h2 class="mt-4">Five grid tiers</h2>
+        <p>There are five tiers to the Bootstrap grid system, one for each range of devices we support. Each tier starts at a minimum viewport size and automatically applies to the larger devices unless overridden.</p>
+    
+        <div class="row mb-3 text-center">
+          <div class="col-4 themed-grid-col">.col-4</div>
+          <div class="col-4 themed-grid-col">.col-4</div>
+          <div class="col-4 themed-grid-col">.col-4</div>
+        </div>
+    
+        <div class="row mb-3 text-center">
+          <div class="col-sm-4 themed-grid-col">.col-sm-4</div>
+          <div class="col-sm-4 themed-grid-col">.col-sm-4</div>
+          <div class="col-sm-4 themed-grid-col">.col-sm-4</div>
+        </div>
+    
+        <div class="row mb-3 text-center">
+          <div class="col-md-4 themed-grid-col">.col-md-4</div>
+          <div class="col-md-4 themed-grid-col">.col-md-4</div>
+          <div class="col-md-4 themed-grid-col">.col-md-4</div>
+        </div>
+    
+        <div class="row mb-3 text-center">
+          <div class="col-lg-4 themed-grid-col">.col-lg-4</div>
+          <div class="col-lg-4 themed-grid-col">.col-lg-4</div>
+          <div class="col-lg-4 themed-grid-col">.col-lg-4</div>
+        </div>
+    
+        <div class="row mb-3 text-center">
+          <div class="col-xl-4 themed-grid-col">.col-xl-4</div>
+          <div class="col-xl-4 themed-grid-col">.col-xl-4</div>
+          <div class="col-xl-4 themed-grid-col">.col-xl-4</div>
+        </div>
+    
+        <div class="row mb-3 text-center">
+          <div class="col-xxl-4 themed-grid-col">.col-xxl-4</div>
+          <div class="col-xxl-4 themed-grid-col">.col-xxl-4</div>
+          <div class="col-xxl-4 themed-grid-col">.col-xxl-4</div>
+        </div>
+    
+        <h2 class="mt-4">Three equal columns</h2>
+        <p>Get three equal-width columns <strong>starting at desktops and scaling to large desktops</strong>. On mobile devices, tablets and below, the columns will automatically stack.</p>
+        <div class="row mb-3 text-center">
+          <div class="col-md-4 themed-grid-col">.col-md-4</div>
+          <div class="col-md-4 themed-grid-col">.col-md-4</div>
+          <div class="col-md-4 themed-grid-col">.col-md-4</div>
+        </div>
+    
+        <h2 class="mt-4">Three equal columns alternative</h2>
+        <p>By using the <code>.row-cols-*</code> classes, you can easily create a grid with equal columns.</p>
+        <div class="row row-cols-md-3 mb-3 text-center">
+          <div class="col themed-grid-col"><code>.col</code> child of <code>.row-cols-md-3</code></div>
+          <div class="col themed-grid-col"><code>.col</code> child of <code>.row-cols-md-3</code></div>
+          <div class="col themed-grid-col"><code>.col</code> child of <code>.row-cols-md-3</code></div>
+        </div>
+    
+        <h2 class="mt-4">Three unequal columns</h2>
+        <p>Get three columns <strong>starting at desktops and scaling to large desktops</strong> of various widths. Remember, grid columns should add up to twelve for a single horizontal block. More than that, and columns start stacking no matter the viewport.</p>
+        <div class="row mb-3 text-center">
+          <div class="col-md-3 themed-grid-col">.col-md-3</div>
+          <div class="col-md-6 themed-grid-col">.col-md-6</div>
+          <div class="col-md-3 themed-grid-col">.col-md-3</div>
+        </div>
+    
+        <h2 class="mt-4">Two columns</h2>
+        <p>Get two columns <strong>starting at desktops and scaling to large desktops</strong>.</p>
+        <div class="row mb-3 text-center">
+          <div class="col-md-8 themed-grid-col">.col-md-8</div>
+          <div class="col-md-4 themed-grid-col">.col-md-4</div>
+        </div>
+    
+        <h2 class="mt-4">Full width, single column</h2>
+        <p class="text-warning">
+          No grid classes are necessary for full-width elements.
+        </p>
+    
+        <hr class="my-4">
+    
+        <h2 class="mt-4">Two columns with two nested columns</h2>
+        <p>Per the documentation, nesting is easy—just put a row of columns within an existing column. This gives you two columns <strong>starting at desktops and scaling to large desktops</strong>, with another two (equal widths) within the larger column.</p>
+        <p>At mobile device sizes, tablets and down, these columns and their nested columns will stack.</p>
+        <div class="row mb-3 text-center">
+          <div class="col-md-8 themed-grid-col">
+            <div class="pb-3">
+              .col-md-8
+            </div>
+            <div class="row">
+              <div class="col-md-6 themed-grid-col">.col-md-6</div>
+              <div class="col-md-6 themed-grid-col">.col-md-6</div>
+            </div>
+          </div>
+          <div class="col-md-4 themed-grid-col">.col-md-4</div>
+        </div>
+    
+        <hr class="my-4">
+    
+        <h2 class="mt-4">Mixed: mobile and desktop</h2>
+        <p>The Bootstrap v5 grid system has six tiers of classes: xs (extra small, this class infix is not used), sm (small), md (medium), lg (large), xl (x-large), and xxl (xx-large). You can use nearly any combination of these classes to create more dynamic and flexible layouts.</p>
+        <p>Each tier of classes scales up, meaning if you plan on setting the same widths for md, lg, xl and xxl, you only need to specify md.</p>
+        <div class="row mb-3 text-center">
+          <div class="col-md-8 themed-grid-col">.col-md-8</div>
+          <div class="col-6 col-md-4 themed-grid-col">.col-6 .col-md-4</div>
+        </div>
+        <div class="row mb-3 text-center">
+          <div class="col-6 col-md-4 themed-grid-col">.col-6 .col-md-4</div>
+          <div class="col-6 col-md-4 themed-grid-col">.col-6 .col-md-4</div>
+          <div class="col-6 col-md-4 themed-grid-col">.col-6 .col-md-4</div>
+        </div>
+        <div class="row mb-3 text-center">
+          <div class="col-6 themed-grid-col">.col-6</div>
+          <div class="col-6 themed-grid-col">.col-6</div>
+        </div>
+    
+        <hr class="my-4">
+    
+        <h2 class="mt-4">Mixed: mobile, tablet, and desktop</h2>
+        <div class="row mb-3 text-center">
+          <div class="col-sm-6 col-lg-8 themed-grid-col">.col-sm-6 .col-lg-8</div>
+          <div class="col-6 col-lg-4 themed-grid-col">.col-6 .col-lg-4</div>
+        </div>
+        <div class="row mb-3 text-center">
+          <div class="col-6 col-sm-4 themed-grid-col">.col-6 .col-sm-4</div>
+          <div class="col-6 col-sm-4 themed-grid-col">.col-6 .col-sm-4</div>
+          <div class="col-6 col-sm-4 themed-grid-col">.col-6 .col-sm-4</div>
+        </div>
+    
+        <hr class="my-4">
+    
+        <h2 class="mt-4">Gutters</h2>
+        <p>With <code>.gx-*</code> classes, the horizontal gutters can be adjusted.</p>
+        <div class="row row-cols-1 row-cols-md-3 gx-4 text-center">
+          <div class="col themed-grid-col"><code>.col</code> with <code>.gx-4</code> gutters</div>
+          <div class="col themed-grid-col"><code>.col</code> with <code>.gx-4</code> gutters</div>
+          <div class="col themed-grid-col"><code>.col</code> with <code>.gx-4</code> gutters</div>
+          <div class="col themed-grid-col"><code>.col</code> with <code>.gx-4</code> gutters</div>
+          <div class="col themed-grid-col"><code>.col</code> with <code>.gx-4</code> gutters</div>
+          <div class="col themed-grid-col"><code>.col</code> with <code>.gx-4</code> gutters</div>
+        </div>
+        <p class="mt-4">Use the <code>.gy-*</code> classes to control the vertical gutters.</p>
+        <div class="row row-cols-1 row-cols-md-3 gy-4 text-center">
+          <div class="col themed-grid-col"><code>.col</code> with <code>.gy-4</code> gutters</div>
+          <div class="col themed-grid-col"><code>.col</code> with <code>.gy-4</code> gutters</div>
+          <div class="col themed-grid-col"><code>.col</code> with <code>.gy-4</code> gutters</div>
+          <div class="col themed-grid-col"><code>.col</code> with <code>.gy-4</code> gutters</div>
+          <div class="col themed-grid-col"><code>.col</code> with <code>.gy-4</code> gutters</div>
+          <div class="col themed-grid-col"><code>.col</code> with <code>.gy-4</code> gutters</div>
+        </div>
+        <p class="mt-4">With <code>.g-*</code> classes, the gutters in both directions can be adjusted.</p>
+        <div class="row row-cols-1 row-cols-md-3 g-3 text-center">
+          <div class="col themed-grid-col"><code>.col</code> with <code>.g-3</code> gutters</div>
+          <div class="col themed-grid-col"><code>.col</code> with <code>.g-3</code> gutters</div>
+          <div class="col themed-grid-col"><code>.col</code> with <code>.g-3</code> gutters</div>
+          <div class="col themed-grid-col"><code>.col</code> with <code>.g-3</code> gutters</div>
+          <div class="col themed-grid-col"><code>.col</code> with <code>.g-3</code> gutters</div>
+          <div class="col themed-grid-col"><code>.col</code> with <code>.g-3</code> gutters</div>
+        </div>
+      </div>
+    
+      <div class="container" id="containers">
+        <hr class="my-4">
+    
+        <h2 class="mt-4">Containers</h2>
+        <p>Additional classes added in Bootstrap v4.4 allow containers that are 100% wide until a particular breakpoint. v5 adds a new <code>xxl</code> breakpoint.</p>
+      </div>
+    
+      <div class="container themed-container text-center">.container</div>
+      <div class="container-sm themed-container text-center">.container-sm</div>
+      <div class="container-md themed-container text-center">.container-md</div>
+      <div class="container-lg themed-container text-center">.container-lg</div>
+      <div class="container-xl themed-container text-center">.container-xl</div>
+      <div class="container-xxl themed-container text-center">.container-xxl</div>
+      <div class="container-fluid themed-container text-center">.container-fluid</div>
+    </main>
+    <style>
+      .themed-container {
+          padding: .75rem;
+          margin-bottom: 1.5rem;
+          background-color: rgba(0, 123, 255, .15);
+          border: 1px solid rgba(0, 123, 255, .2);
+      }
+    </style>
+    <!--  compo10-->
+    <!--  -->
+    <!--  compo11 dropdown-->
+    <div class="dropdown-menu d-block position-static p-2 shadow rounded-3 w-340px">
+      <div class="d-grid gap-1">
+        <div class="cal">
+          <div class="cal-month">
+            <button class="btn cal-btn" type="button">
+              <svg class="bi" width="16" height="16"><use xlink:href="#arrow-left-short"></use></svg>
+            </button>
+            <strong class="cal-month-name">June</strong>
+            <select class="form-select cal-month-name d-none">
+              <option value="January">January</option>
+              <option value="February">February</option>
+              <option value="March">March</option>
+              <option value="April">April</option>
+              <option value="May">May</option>
+              <option selected="" value="June">June</option>
+              <option value="July">July</option>
+              <option value="August">August</option>
+              <option value="September">September</option>
+              <option value="October">October</option>
+              <option value="November">November</option>
+              <option value="December">December</option>
+            </select>
+            <button class="btn cal-btn" type="button">
+              <svg class="bi" width="16" height="16"><use xlink:href="#arrow-right-short"></use></svg>
+            </button>
+          </div>
+          <div class="cal-weekdays text-muted">
+            <div class="cal-weekday">Sun</div>
+            <div class="cal-weekday">Mon</div>
+            <div class="cal-weekday">Tue</div>
+            <div class="cal-weekday">Wed</div>
+            <div class="cal-weekday">Thu</div>
+            <div class="cal-weekday">Fri</div>
+            <div class="cal-weekday">Sat</div>
+          </div>
+          <div class="cal-days">
+            <button class="btn cal-btn" disabled="" type="button">30</button>
+            <button class="btn cal-btn" disabled="" type="button">31</button>
+    
+            <button class="btn cal-btn" type="button">1</button>
+            <button class="btn cal-btn" type="button">2</button>
+            <button class="btn cal-btn" type="button">3</button>
+            <button class="btn cal-btn" type="button">4</button>
+            <button class="btn cal-btn" type="button">5</button>
+            <button class="btn cal-btn" type="button">6</button>
+            <button class="btn cal-btn" type="button">7</button>
+    
+            <button class="btn cal-btn" type="button">8</button>
+            <button class="btn cal-btn" type="button">9</button>
+            <button class="btn cal-btn" type="button">10</button>
+            <button class="btn cal-btn" type="button">11</button>
+            <button class="btn cal-btn" type="button">12</button>
+            <button class="btn cal-btn" type="button">13</button>
+            <button class="btn cal-btn" type="button">14</button>
+    
+            <button class="btn cal-btn" type="button">15</button>
+            <button class="btn cal-btn" type="button">16</button>
+            <button class="btn cal-btn" type="button">17</button>
+            <button class="btn cal-btn" type="button">18</button>
+            <button class="btn cal-btn" type="button">19</button>
+            <button class="btn cal-btn" type="button">20</button>
+            <button class="btn cal-btn" type="button">21</button>
+    
+            <button class="btn cal-btn" type="button">22</button>
+            <button class="btn cal-btn" type="button">23</button>
+            <button class="btn cal-btn" type="button">24</button>
+            <button class="btn cal-btn" type="button">25</button>
+            <button class="btn cal-btn" type="button">26</button>
+            <button class="btn cal-btn" type="button">27</button>
+            <button class="btn cal-btn" type="button">28</button>
+    
+            <button class="btn cal-btn" type="button">29</button>
+            <button class="btn cal-btn" type="button">30</button>
+            <button class="btn cal-btn" type="button">31</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  compo11-->
+    <!--  -->
+    <!--  compo12-->
+     <div class="container">
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a class="nav-link active" href="#scrollspyHeading1">First</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#scrollspyHeading2">Second</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">calender</a>
+          <!-- <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#scrollspyHeading3">Third</a></li>
+            <li><a class="dropdown-item" href="#scrollspyHeading4">Fourth</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#scrollspyHeading5">Fifth</a></li>
+          </ul> -->
+          <div class="dropdown-menu  position-static p-2 shadow rounded-3 w-340px" >
+            <div class="dropdown-item d-grid gap-1">
+              <div class="dropdown cal">
+                <div class="dropdown cal-month">
+                  <button class="btn cal-btn" type="button">
+                    <svg class="bi" width="16" height="16"><use xlink:href="#arrow-left-short"></use></svg>
+                  </button>
+                  <strong class="cal-month-name">June</strong>
+                  <select class="form-select cal-month-name d-none">
+                    <option value="January">January</option>
+                    <option value="February">February</option>
+                    <option value="March">March</option>
+                    <option value="April">April</option>
+                    <option value="May">May</option>
+                    <option selected="" value="June">June</option>
+                    <option value="July">July</option>
+                    <option value="August">August</option>
+                    <option value="September">September</option>
+                    <option value="October">October</option>
+                    <option value="November">November</option>
+                    <option value="December">December</option>
+                  </select>
+                  <button class="btn cal-btn" type="button">
+                    <svg class="bi" width="16" height="16"><use xlink:href="#arrow-right-short"></use></svg>
+                  </button>
+                </div>
+                <div class="dropdown cal-weekdays text-muted">
+                  <div class="cal-weekday">Sun</div>
+                  <div class="cal-weekday">Mon</div>
+                  <div class="cal-weekday">Tue</div>
+                  <div class="cal-weekday">Wed</div>
+                  <div class="cal-weekday">Thu</div>
+                  <div class="cal-weekday">Fri</div>
+                  <div class="cal-weekday">Sat</div>
+                </div>
+                <div class="dropdown cal-days">
+                  <button class="btn cal-btn" disabled="" type="button">30</button>
+                  <button class="btn cal-btn" disabled="" type="button">31</button>
+          
+                  <button class="btn cal-btn" type="button">1</button>
+                  <button class="btn cal-btn" type="button">2</button>
+                  <button class="btn cal-btn" type="button">3</button>
+                  <button class="btn cal-btn" type="button">4</button>
+                  <button class="btn cal-btn" type="button">5</button>
+                  <button class="btn cal-btn" type="button">6</button>
+                  <button class="btn cal-btn" type="button">7</button>
+          
+                  <button class="btn cal-btn" type="button">8</button>
+                  <button class="btn cal-btn" type="button">9</button>
+                  <button class="btn cal-btn" type="button">10</button>
+                  <button class="btn cal-btn" type="button">11</button>
+                  <button class="btn cal-btn" type="button">12</button>
+                  <button class="btn cal-btn" type="button">13</button>
+                  <button class="btn cal-btn" type="button">14</button>
+          
+                  <button class="btn cal-btn" type="button">15</button>
+                  <button class="btn cal-btn" type="button">16</button>
+                  <button class="btn cal-btn" type="button">17</button>
+                  <button class="btn cal-btn" type="button">18</button>
+                  <button class="btn cal-btn" type="button">19</button>
+                  <button class="btn cal-btn" type="button">20</button>
+                  <button class="btn cal-btn" type="button">21</button>
+          
+                  <button class="btn cal-btn" type="button">22</button>
+                  <button class="btn cal-btn" type="button">23</button>
+                  <button class="btn cal-btn" type="button">24</button>
+                  <button class="btn cal-btn" type="button">25</button>
+                  <button class="btn cal-btn" type="button">26</button>
+                  <button class="btn cal-btn" type="button">27</button>
+                  <button class="btn cal-btn" type="button">28</button>
+          
+                  <button class="btn cal-btn" type="button">29</button>
+                  <button class="btn cal-btn" type="button">30</button>
+                  <button class="btn cal-btn" type="button">31</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">search</a>
+          <!-- <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#scrollspyHeading3">Third</a></li>
+            <li><a class="dropdown-item" href="#scrollspyHeading4">Fourth</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#scrollspyHeading5">Fifth</a></li>
+          </ul> -->
+          <div class="dropdown-menu  position-static pt-0 mx-0 rounded-3 shadow  w-280px">
+            <form class="dropdown-item p-2 mb-2 bg-light border-bottom">
+              <input type="search" class="form-control" autocomplete="false" placeholder="Type to filter...">
+            </form>
+            <ul class="dropdown list-unstyled mb-0">
+              <li><a class="dropdown d-flex align-items-center gap-2 py-2" href="#">
+                <span class="d-inline-block bg-success rounded-circle p-1"></span>
+                Action
+              </a></li>
+              <li><a class="dropdown d-flex align-items-center gap-2 py-2" href="#">
+                <span class="d-inline-block bg-primary rounded-circle p-1"></span>
+                Another action
+              </a></li>
+              <li><a class="dropdown d-flex align-items-center gap-2 py-2" href="#">
+                <span class="d-inline-block bg-danger rounded-circle p-1"></span>
+                Something else here
+              </a></li>
+              <li><a class="dropdown d-flex align-items-center gap-2 py-2" href="#">
+                <span class="d-inline-block bg-info rounded-circle p-1"></span>
+                Separated link
+              </a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#scrollspyHeading3">Third</a></li>
+            <li><a class="dropdown-item" href="#scrollspyHeading4">Fourth</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#scrollspyHeading5">Fifth</a></li>
+          </ul>
+        </li>
+      </ul>
+     </div>
+    <!--  compo12-->
+    <!--  -->
+    <!--  compo13-->
+    <article class="my-3" id="modal">
+      <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+        <h3>Modal</h3>
+        <a class="d-flex align-items-center" href="../components/modal/">Documentation</a>
+      </div>
+
+      <div>
+        <div class="bd-example-snippet bd-code-snippet"><div class="bd-example">
+        <div class="d-flex justify-content-between flex-wrap">
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalDefault">
+            Launch demo modal
+          </button>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdropLive">
+            Launch static backdrop modal
+          </button>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalCenteredScrollable">
+            Vertically centered scrollable modal
+          </button>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalFullscreen">
+            Full screen
+          </button>
+        </div>
+        </div></div>
+
+      </div>
+    </article>
+    <!--  compo13-->
+    <!--  -->
+    <!--  compo14-->
+    <div class="container">
+
+      <div class="d-flex gap-5 justify-content-center">
+        <ul class="dropdown-menu position-static d-grid gap-1 p-2 rounded-3 mx-0 shadow w-220px">
+          <li><a class="dropdown-item rounded-2 active" href="#">Action</a></li>
+          <li><a class="dropdown-item rounded-2" href="#">Another action</a></li>
+          <li><a class="dropdown-item rounded-2" href="#">Something else here</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item rounded-2" href="#">Separated link</a></li>
+        </ul>
+        <ul class="dropdown-menu dropdown-menu-dark position-static d-grid gap-1 p-2 rounded-3 mx-0 border-0 shadow w-220px">
+          <li><a class="dropdown-item rounded-2 active" href="#">Action</a></li>
+          <li><a class="dropdown-item rounded-2" href="#">Another action</a></li>
+          <li><a class="dropdown-item rounded-2" href="#">Something else here</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item rounded-2" href="#">Separated link</a></li>
+        </ul>
+      </div>
+      <div class="d-flex gap-5 justify-content-center">
+        <div class="dropdown-menu d-block position-static pt-0 mx-0 rounded-3 shadow overflow-hidden w-280px">
+          <form class="p-2 mb-2 bg-light border-bottom">
+            <input type="search" class="form-control" autocomplete="false" placeholder="Type to filter...">
+          </form>
+          <ul class="list-unstyled mb-0">
+            <li><a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#">
+              <span class="d-inline-block bg-success rounded-circle p-1"></span>
+              Action
+            </a></li>
+            <li><a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#">
+              <span class="d-inline-block bg-primary rounded-circle p-1"></span>
+              Another action
+            </a></li>
+            <li><a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#">
+              <span class="d-inline-block bg-danger rounded-circle p-1"></span>
+              Something else here
+            </a></li>
+            <li><a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#">
+              <span class="d-inline-block bg-info rounded-circle p-1"></span>
+              Separated link
+            </a></li>
+          </ul>
+        </div>
+      
+        <div class="dropdown-menu dropdown-menu-dark d-block position-static border-0 pt-0 mx-0 rounded-3 shadow overflow-hidden w-280px">
+          <form class="p-2 mb-2 bg-dark border-bottom border-dark">
+            <input type="search" class="form-control form-control-dark" autocomplete="false" placeholder="Type to filter...">
+          </form>
+          <ul class="list-unstyled mb-0">
+            <li><a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#">
+              <span class="d-inline-block bg-success rounded-circle p-1"></span>
+              Action
+            </a></li>
+            <li><a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#">
+              <span class="d-inline-block bg-primary rounded-circle p-1"></span>
+              Another action
+            </a></li>
+            <li><a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#">
+              <span class="d-inline-block bg-danger rounded-circle p-1"></span>
+              Something else here
+            </a></li>
+            <li><a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#">
+              <span class="d-inline-block bg-info rounded-circle p-1"></span>
+              Separated link
+            </a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="d-flex gap-5 justify-content-center">
+        <ul class="dropdown-menu d-block position-static mx-0 shadow w-220px">
+          <li>
+            <a class="dropdown-item d-flex gap-2 align-items-center" href="#">
+              <svg class="bi" width="16" height="16"><use xlink:href="#files"></use></svg>
+              Documents
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item d-flex gap-2 align-items-center" href="#">
+              <svg class="bi" width="16" height="16"><use xlink:href="#image-fill"></use></svg>
+              Photos
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item d-flex gap-2 align-items-center" href="#">
+              <svg class="bi" width="16" height="16"><use xlink:href="#film"></use></svg>
+              Movies
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item d-flex gap-2 align-items-center" href="#">
+              <svg class="bi" width="16" height="16"><use xlink:href="#music-note-beamed"></use></svg>
+              Music
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item d-flex gap-2 align-items-center" href="#">
+              <svg class="bi" width="16" height="16"><use xlink:href="#joystick"></use></svg>
+              Games
+            </a>
+          </li>
+          <li><hr class="dropdown-divider"></li>
+          <li>
+            <a class="dropdown-item dropdown-item-danger d-flex gap-2 align-items-center" href="#">
+              <svg class="bi" width="16" height="16"><use xlink:href="#trash"></use></svg>
+              Trash
+            </a>
+          </li>
+        </ul>
+        <ul class="dropdown-menu dropdown-menu-dark d-block position-static mx-0 border-0 shadow w-220px">
+          <li>
+            <a class="dropdown-item d-flex gap-2 align-items-center" href="#">
+              <svg class="bi" width="16" height="16"><use xlink:href="#files"></use></svg>
+              Documents
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item d-flex gap-2 align-items-center" href="#">
+              <svg class="bi" width="16" height="16"><use xlink:href="#image-fill"></use></svg>
+              Photos
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item d-flex gap-2 align-items-center" href="#">
+              <svg class="bi" width="16" height="16"><use xlink:href="#film"></use></svg>
+              Movies
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item d-flex gap-2 align-items-center" href="#">
+              <svg class="bi" width="16" height="16"><use xlink:href="#music-note-beamed"></use></svg>
+              Music
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item d-flex gap-2 align-items-center" href="#">
+              <svg class="bi" width="16" height="16"><use xlink:href="#joystick"></use></svg>
+              Games
+            </a>
+          </li>
+          <li><hr class="dropdown-divider"></li>
+          <li>
+            <a class="dropdown-item d-flex gap-2 align-items-center" href="#">
+              <svg class="bi" width="16" height="16"><use xlink:href="#trash"></use></svg>
+              Trash
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="dropdown-menu position-static d-flex align-items-stretch p-3 rounded-3 shadow-lg ">
+        <nav class="d-grid gap-2 col-8">
+          <a href="#" class="btn btn-hover-light rounded-2 d-flex align-items-center gap-3 py-2 px-3 lh-sm text-start">
+            <svg class="bi" width="32" height="32"><use xlink:href="#image-fill"></use></svg>
+            <div>
+              <strong class="d-block">Features</strong>
+              <small>Take a tour through the product</small>
+            </div>
+          </a>
+          <a href="#" class="btn btn-hover-light rounded-2 d-flex align-items-center gap-3 py-2 px-3 lh-sm text-start">
+            <svg class="bi" width="32" height="32"><use xlink:href="#question-circle"></use></svg>
+            <div>
+              <strong class="d-block">Support</strong>
+              <small>Get help from our support crew</small>
+            </div>
+          </a>
+        </nav>
+        <div class="col-4">
+          ...
+        </div>
+      </div>
+    </div>
+    <!--  compo14-->
+    <!--  -->
+    <!--  compo15-->
+
+    <!--  compo15-->
+    <!--  -->
+    <!--  -->
+
+    <!-- script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+</body>
+</html>
